@@ -2,6 +2,7 @@ package br.com.vax.entities;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+import java.lang.reflect.Field;
 
 public enum TipoVacinaEnum {
     @DescricaoVacina(nome = "BCG (Bacilo Calmette-Guerin)", descricao = "Previne as formas graves de tuberculose, " +
@@ -37,6 +38,5 @@ public enum TipoVacinaEnum {
     DuplaAdulto,
     @DescricaoVacina(nome = "dTPa (Tríplice bacteriana acelular do tipo adulto)", descricao = "Previne difteria, tétano e coqueluche." +
             "Uma dose a cada gestação a partir da 20ª semana de gestação ou no puerpério (até 45 dias após o parto).")
-    dTPa
-
+    dTPa;
 }

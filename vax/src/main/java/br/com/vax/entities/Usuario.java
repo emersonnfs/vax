@@ -1,5 +1,7 @@
 package br.com.vax.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
@@ -9,6 +11,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import java.lang.reflect.Field;
 import java.time.LocalDate;
 import java.util.Collection;
 import java.util.List;
@@ -46,6 +49,11 @@ public class Usuario implements UserDetails {
     @NotNull(message = "O gênero do usuário é obrigatório")
     @Column(name = "GENERO_USUARIO")
     private GeneroEnum genero;
+
+    @Nullable
+    @JsonIgnore
+    @OneToMany(mappedBy = "usuario", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private List<StatusVacina> statusVacina;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

@@ -1,9 +1,13 @@
 package br.com.vax.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 @Data
 @NoArgsConstructor@AllArgsConstructor
@@ -26,4 +30,9 @@ public class Vacina {
 
     @Column(name = "TIPO_DOSE_VACINA")
     private TipoDoseVacinaEnum dose;
+
+    @Nullable
+    @JsonIgnore
+    @OneToMany(mappedBy = "vacina", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private List<StatusVacina> statusVacina;
 }
