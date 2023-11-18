@@ -58,6 +58,7 @@ obs- Lembrar de passar o token de validação no headers
 `STATUS ESPERADO` 200
 
 Explicação - Ao fazer a requisição, caso as informações estejam corretas, retorna 
+
 **Response**
 ```js
 {
@@ -356,3 +357,30 @@ Explicação - Ao fazer a requisição, caso as informações estejam corretas, 
 }
 ```
 ---
+### Atualizar status vacina
+`PUT` /status-vacinas
+
+**Request**
+```js
+[
+    {
+        "id": 180,
+        "status": true
+    },
+    {
+        "id": 143,
+        "status": true
+    }
+]
+```
+obs- Lembrar de passar o token de validação no headers
+`STATUS ESPERADO` 200
+
+Explicação - O formulário criado automaticamente irá fornecer os dados de cada vacina, tipo, qual dose entre outros e para atualizar esse status será passada uma lista com o id de cada vacina e o stataus true ou false
+
+**Response**
+```js
+Status das vacinas atualizado com sucesso.
+```
+
+
