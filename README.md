@@ -55,6 +55,7 @@ Explicação - Ao fazer o login vai ser verificado se está todas informações 
 
 ```
 obs- Lembrar de passar o token de validação no headers
+
 `STATUS ESPERADO` 200
 
 Explicação - Ao fazer a requisição, caso as informações estejam corretas e passa o id do usuário como parâmetro
@@ -374,6 +375,7 @@ Explicação - Ao fazer a requisição, caso as informações estejam corretas e
 ]
 ```
 obs- Lembrar de passar o token de validação no headers
+
 `STATUS ESPERADO` 200
 
 Explicação - O formulário criado automaticamente irá fornecer os dados de cada vacina, tipo, qual dose entre outros e para atualizar esse status será passada uma lista com o id de cada vacina e o stataus true ou false
@@ -396,6 +398,7 @@ Status das vacinas atualizado com sucesso.
 }
 ```
 obs- Lembrar de passar o token de validação no headers
+
 `STATUS ESPERADO` 200
 
 Explicação - É necessário passar o 4 campos no corpo da requisição, a senha para atualizar precisa ser um método separado.
@@ -431,6 +434,7 @@ Explicação - É necessário passar o id do usuario como parâmetro que deseja 
     "cep": "05716120"
 }
 ```
+---
 ### Atualizar senha Usuário
 `POST` /atualizar-senha
 
@@ -443,6 +447,7 @@ Explicação - É necessário passar o id do usuario como parâmetro que deseja 
 }
 ```
 obs- Lembrar de passar o token de validação no headers
+
 `STATUS ESPERADO` 200
 
 Explicação - É necessário passar o id do usuario, a senha antiga e a senha nova no corpo da requisição para atualizar senha e após isso fazer um novo login para atualizar o token.
@@ -456,3 +461,46 @@ Explicação - É necessário passar o id do usuario, a senha antiga e a senha n
     "cep": "05716120"
 }
 ```
+---
+### Listar Vacinas Pendentes
+`GET` /vacinas-pendententes/{id}
+
+**Request**
+```js
+```
+obs- Lembrar de passar o token de validação no headers
+
+`STATUS ESPERADO` 200
+
+Explicação - É necessário passar o id do Usuario como parametro e ele ira retornar um lista com os nomes das vacinas que estão pendentes.
+**Response**
+```js
+[
+    "Hepatite B",
+    "Pentavalente",
+    "Poliomielite",
+    "Pneumocócica 10V",
+    "Rotavírus",
+    "Meningocócica C",
+    "Febre Amarela",
+    "Tríplice Viral",
+    "Tetra Viral",
+    "HPV"
+]
+```
+---
+### Delete Usuario
+`DELETE` /usuario/{id}
+
+**Request**
+```js
+```
+obs- Lembrar de passar o token de validação no headers
+
+`STATUS ESPERADO` 200
+
+Explicação - É necessário passar o id do usuário como parâmetro e ao deletar ele será removido tudo que ele estiver relacionado.
+**Response**
+```js
+```
+---
