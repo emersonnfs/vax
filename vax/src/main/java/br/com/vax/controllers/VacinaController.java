@@ -27,7 +27,7 @@ public class VacinaController {
         return vacinaService.listarFormVacinas(id);
     }
 
-    @PutMapping("/atualizar-status-vacinas")
+    @PutMapping("/status-vacinas")
     public ResponseEntity<String> atualizarStatusVacinas(@RequestBody List<AtualizacaoStatusVacinaRequest> atualizacoes) {
         return vacinaService.atualizarStatusVacinas(atualizacoes);
     }

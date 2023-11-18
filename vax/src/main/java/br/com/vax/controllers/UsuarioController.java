@@ -44,7 +44,7 @@ public class UsuarioController {
 
     private ModelMapper modelMapper;
     @PostMapping("/registrar")
-    public ResponseEntity<Usuario> registrar(@RequestBody @Valid Usuario usuario) {
+    public ResponseEntity<?> registrar(@RequestBody @Valid Usuario usuario) {
         usuario.setSenha(encoder.encode(usuario.getSenha()));
         repository.save(usuario);
         if (usuario.getGenero() == GeneroEnum.Feminino){
@@ -57,8 +57,10 @@ public class UsuarioController {
                 vacinaService.cadastrarStatusVacina(usuario.getId(), (long) i);
             }
         }
+        this.modelMapper = new ModelMapper();
+        UsuarioLoginResponse usuarioLoginResponse = modelMapper.map(usuario, UsuarioLoginResponse.class);
 
-        return ResponseEntity.status(HttpStatusCode.valueOf(201)).body(usuario);
+        return ResponseEntity.status(HttpStatusCode.valueOf(201)).body(usuarioLoginResponse);
     }
 
     @PostMapping("/login")
