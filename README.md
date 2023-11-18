@@ -524,3 +524,15 @@ SQL Database liveshare
 
 ### Criado Deploy de Web App Azure
 Após baixar o plugin da Azure no Intellij em Tools>Azure>Deploy to Azure Web Apps
+![image](https://github.com/emersonnfs/vax/assets/101301360/919523fa-5547-45ab-b4b5-a1e3dc5599a2)
+
+Escolha a plataforma e nome(que será o domínio)
+![image](https://github.com/emersonnfs/vax/assets/101301360/11e60ddf-52e9-4953-ba3d-dccb529b40d3)
+
+Aperte Run e o Web App será feito a criação do Grupo de Recursos , Plano de Serviço e Serviço de APP
+![image](https://github.com/emersonnfs/vax/assets/101301360/b475cbb0-c9d1-424e-a0d3-bab21c9b60a2)
+
+Criado o Grupo de Recursos e o Plano de Serviço
+![image](https://github.com/emersonnfs/vax/assets/101301360/d58d3d3c-a601-4104-b6d6-1cf692cf8f0b)
+
+Criado o Web App na Azure com a URL funcional
