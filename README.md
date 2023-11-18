@@ -8,7 +8,7 @@
 
 ### Url da Api
 URL: https://app-vax.azurewebsites.net
-
+[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/23679644-bcc023d7-cf85-4518-8e94-364b12f69cb0?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D23679644-bcc023d7-cf85-4518-8e94-364b12f69cb0%26entityType%3Dcollection%26workspaceId%3D823a0d7c-908a-4fc5-9fd4-0ac328d1a6bb)
 ---
 
 ## Exemplos da Api
