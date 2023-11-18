@@ -10,7 +10,7 @@
 URL: https://app-vax.azurewebsites.net
 ---
 ### Postman api
-https://elements.getpostman.com/redirect?entityId=23679644-bcc023d7-cf85-4518-8e94-364b12f69cb0&entityType=collection
+
 ---
 
 ## Exemplos da Api
