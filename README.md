@@ -504,3 +504,20 @@ Explicação - É necessário passar o id do usuário como parâmetro e ao delet
 ```js
 ```
 ---
+
+## How to do Cloud
+
+### Criado o Servidor SQL e o Banco no portal da Azure
+Comandos no Azure Client
+``` js
+az group create --name rg-bcosql --location brazilsouth
+az sql server create -l brazilsouth -g rg-bcosql -n sqlserver-rm95199 -u admsql -p devops@Fiap2tds --enable-public-network true
+az sql db create -g rg-bcosql -s sqlserver-rm95199 -n lifeshare --service-objective Basic --backup-storage-redundancy Local --zone-redundant false
+az sql server firewall-rule create -g rg-bcosql -s sqlserver-rm95199 -n AllowAll --start-ip-address 0.0.0.0 --end-ip-address 255.255.255.255
+```
+Servidor SQL
+![image](https://github.com/emersonnfs/vax/assets/101301360/a358954c-5dda-48c6-8868-745da54b6f28)
+
+SQL Database liveshare
+![image](https://github.com/emersonnfs/vax/assets/101301360/62b7fb09-ad0e-4207-b12c-9016b171211d)
+---
