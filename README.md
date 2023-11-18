@@ -521,3 +521,6 @@ Servidor SQL
 SQL Database liveshare
 ![image](https://github.com/emersonnfs/vax/assets/101301360/62b7fb09-ad0e-4207-b12c-9016b171211d)
 ---
+
+### Criado Deploy de Web App Azure
+Após baixar o plugin da Azure no Intellij em Tools>Azure>Deploy to Azure Web Apps
