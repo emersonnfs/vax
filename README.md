@@ -8,7 +8,9 @@
 
 ### Url da Api
 URL: https://app-vax.azurewebsites.net
-https://www.postman.com/emersonnfs1996/workspace/studit-api/collection/23679644-bcc023d7-cf85-4518-8e94-364b12f69cb0?action=share&creator=23679644
+---
+### Postman api
+https://elements.getpostman.com/redirect?entityId=23679644-bcc023d7-cf85-4518-8e94-364b12f69cb0&entityType=collection
 ---
 
 ## Exemplos da Api
