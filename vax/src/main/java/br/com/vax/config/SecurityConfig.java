@@ -30,7 +30,7 @@ public class SecurityConfig {
                                 .requestMatchers(HttpMethod.POST,"/registrar").permitAll()
                                 .requestMatchers(HttpMethod.POST,"/login").permitAll()
                                 .requestMatchers("/v3/api-docs/**", "/swagger-ui.html", "/swagger-ui/**" ).permitAll()
-                                .anyRequest().authenticated()
+                                .anyRequest().permitAll()
                 )
                 .csrf(csrf -> csrf.disable())
                 .sessionManagement(sessionManagement ->

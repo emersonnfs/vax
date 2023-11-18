@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/vax.iml" filepath="$PROJECT_DIR$/.idea/vax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vax/vax.iml" filepath="$PROJECT_DIR$/vax/vax.iml" />
     </modules>
   </component>
 </project>

@@ -8,6 +8,7 @@ import br.com.vax.models.UpdateSenhaUsuario;
 import br.com.vax.models.UsuarioLoginResponse;
 import br.com.vax.repositories.UsuarioRepository;
 import br.com.vax.services.TokenService;
+import br.com.vax.services.VacinaService;
 import jakarta.validation.Valid;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,7 +39,7 @@ public class UsuarioController {
     TokenService tokenService;
 
     @Autowired
-    VacinaController vacinaController;
+    VacinaService vacinaService;
 
 
     private ModelMapper modelMapper;
@@ -48,12 +49,12 @@ public class UsuarioController {
         repository.save(usuario);
         if (usuario.getGenero() == GeneroEnum.Feminino){
             for(int i = 0; i <= 48; i++){
-                vacinaController.cadastrarStatusVacina(usuario.getId(), (long) i);
+                vacinaService.cadastrarStatusVacina(usuario.getId(), (long) i);
             }
         }
         else {
             for(int i = 0; i < 48; i++){
-                vacinaController.cadastrarStatusVacina(usuario.getId(), (long) i);
+                vacinaService.cadastrarStatusVacina(usuario.getId(), (long) i);
             }
         }
 
