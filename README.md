@@ -57,7 +57,7 @@ Explicação - Ao fazer o login vai ser verificado se está todas informações 
 obs- Lembrar de passar o token de validação no headers
 `STATUS ESPERADO` 200
 
-Explicação - Ao fazer a requisição, caso as informações estejam corretas, retorna 
+Explicação - Ao fazer a requisição, caso as informações estejam corretas e passa o id do usuário como parâmetro
 
 **Response**
 ```js
@@ -382,5 +382,77 @@ Explicação - O formulário criado automaticamente irá fornecer os dados de ca
 ```js
 Status das vacinas atualizado com sucesso.
 ```
+---
+### Atualizar Usuario
+`PUT` /usuario/{id}
 
+**Request**
+```js
+{
+    "nome":"Emerson Silva",
+    "dataNascimento":"1996-11-08",
+    "email":"emerson@gmail.com",
+    "cep": "05716120"
+}
+```
+obs- Lembrar de passar o token de validação no headers
+`STATUS ESPERADO` 200
 
+Explicação - É necessário passar o 4 campos no corpo da requisição, a senha para atualizar precisa ser um método separado.
+
+**Response**
+```js
+{
+    "id": 5,
+    "nome": "Emerson Silva",
+    "email": "emerson@gmail.com",
+    "dataNascimento": "1996-11-08",
+    "cep": "05716120"
+}
+```
+---
+### Get Usuario por Id
+`GET` /usuario/{id}
+
+**Request**
+```js
+```
+obs- Lembrar de passar o token de validação no headers
+`STATUS ESPERADO` 200
+
+Explicação - É necessário passar o id do usuario como parâmetro que deseja buscar a informação.
+**Response**
+```js
+{
+    "id": 5,
+    "nome": "Emerson Silva",
+    "email": "emerson@gmail.com",
+    "dataNascimento": "1996-11-08",
+    "cep": "05716120"
+}
+```
+### Atualizar senha Usuário
+`POST` /atualizar-senha
+
+**Request**
+```js
+{
+    "id":"5",
+    "senhaAntiga":"senha123",
+    "senhaNova": "123senha"
+}
+```
+obs- Lembrar de passar o token de validação no headers
+`STATUS ESPERADO` 200
+
+Explicação - É necessário passar o id do usuario, a senha antiga e a senha nova no corpo da requisição para atualizar senha e após isso fazer um novo login para atualizar o token.
+**Response**
+```js
+{
+    "id": 5,
+    "nome": "Emerson Silva",
+    "email": "emerson@gmail.com",
+    "dataNascimento": "1996-11-08",
+    "cep": "05716120"
+}
+```
