@@ -32,8 +32,13 @@ public class VacinaController {
         return vacinaService.atualizarStatusVacinas(atualizacoes);
     }
 
-    @GetMapping("/pendente-hepatiteb/{id}")
-    public boolean pendenteHepatiteB(@PathVariable Long id) {
-        return vacinaService.pendenteHepatiteB(id);
+    @GetMapping("/vacinas-pendententes/{id}")
+    public ResponseEntity<?> listarVacinasPendentes(@PathVariable Long id) {
+        List<String> listaResponse = vacinaService.listaPendentes(id);
+        if (listaResponse.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NO_CONTENT).body(listaResponse);
+        }
+        return ResponseEntity.ok(listaResponse);
     }
+
 }

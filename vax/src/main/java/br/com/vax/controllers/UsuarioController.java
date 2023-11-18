@@ -148,4 +148,15 @@ public class UsuarioController {
         }
         return ResponseEntity.ok().body(usuarioLoginResponses);
     }
+
+    @DeleteMapping("/usuario/{id}")
+    ResponseEntity<?> deletar(@PathVariable Long id){
+        Optional<Usuario> usuarioOptional = repository.findById(id);
+        if (usuarioOptional.isPresent()){
+            Usuario usuario = usuarioOptional.get();
+            repository.delete(usuario);
+            return ResponseEntity.ok().build();
+        }
+        return ResponseEntity.badRequest().build();
+    }
 }
