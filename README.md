@@ -8,6 +8,7 @@
 
 ### Cadastro de Usuario
 `POST` /registrar
+
 **Request**
 ```js
 {
@@ -20,10 +21,12 @@
 }
 ```
 `STATUS ESPERADO` -201
+
 Explicação - Ao fazer o cadastro é gerado automaticamente um formulário com todas as vacinas disponíveis para tomar.
 ---
 ### Login Usuário
 `POST` /login
+
 **Request**
 ```js
 {
@@ -32,6 +35,7 @@ Explicação - Ao fazer o cadastro é gerado automaticamente um formulário com 
 }
 ```
 `STATUS ESPERADO` -200
+
 Explicação - Ao fazer o login vai ser verificado se está todas informações corretas, se assim for, retornará um objeto com os dados importantes para o projeto e o token no headers.
 **Response**
 ```js
