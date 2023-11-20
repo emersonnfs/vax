@@ -213,9 +213,6 @@ public class VacinaService {
             if(!pendenteHepatiteA(listaStatusVacinas)){
                 listaPendentes.add("Hepatite A");
             }
-            if(!pendenteTetraViral(listaStatusVacinas)){
-                listaPendentes.add("Tetra Viral");
-            }
             if(!pendenteHPV(listaStatusVacinas)){
                 listaPendentes.add("HPV");
             }
@@ -345,7 +342,7 @@ public class VacinaService {
         int contagemHPV = contagemVacinas(listaStatusVacinas,TipoVacinaEnum.HPV);
         if(listaStatusVacinas.get(0).getUsuario().getDataNascimento().isAfter(LocalDate.now().minusYears(10))){
             return true;
-        } else if (contagemHPV==2) {
+        } else if (contagemHPV<2) {
             return true;
         }
         return false;
