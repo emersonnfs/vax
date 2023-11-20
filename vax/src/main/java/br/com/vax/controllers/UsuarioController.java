@@ -45,6 +45,10 @@ public class UsuarioController {
     private ModelMapper modelMapper;
     @PostMapping("/registrar")
     public ResponseEntity<?> registrar(@RequestBody @Valid Usuario usuario) {
+        Optional<Usuario> usuarioOptional = repository.findByEmail(usuario.getEmail());
+        if (usuarioOptional.isPresent()) {
+            return ResponseEntity.status(HttpStatus.CONFLICT).build();
+        }
         usuario.setSenha(encoder.encode(usuario.getSenha()));
         repository.save(usuario);
         if (usuario.getGenero() == GeneroEnum.Feminino){
