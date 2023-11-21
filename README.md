@@ -67,7 +67,7 @@ obs- Lembrar de passar o token de validação no headers
 
 `STATUS ESPERADO` 200
 
-Explicação - Ao fazer a requisição, caso as informações estejam corretas e passa o id do usuário como parâmetro
+Explicação - Ao fazer a requisição, caso as informações estejam corretas será retornado o formulário com todas as informações das vacinas possíveis a ser tomado por da uma pessoa da idade do usuário, ao usuário ser cadastrado o usuário terá as informações todas as vacinas cadastradas como false e com isso pode se alterar para o status correto.
 
 **Response**
 ```js
