@@ -105,106 +105,210 @@ Explicação - Ao fazer a requisição, caso as informações estejam corretas s
 **Response**
 ```js
 {
-    "Adolescente": {
-        "TripliceViral": [
-            {
-                "id": 82,
-                "nome": "Tríplice viral (sarampo, caxumba e rubéola)",
-                "descricao": "Previne sarampo, caxumba e rubéola.",
-                "categoria": "Adolescente",
-                "dose": "PrimeiraDose",
-                "status": false
-            },
-            {
-                "id": 83,
-                "nome": "Tríplice viral (sarampo, caxumba e rubéola)",
-                "descricao": "Previne sarampo, caxumba e rubéola.",
-                "categoria": "Adolescente",
-                "dose": "SegundaDose",
-                "status": false
-            }
-        ],
+    "Idoso": {
         "DuplaAdulto": [
             {
-                "id": 92,
+                "id": 189,
                 "nome": "Dupla Adulto (dT)",
                 "descricao": "Previne difteria e tétano.",
-                "categoria": "Adolescente",
+                "categoria": "Idoso",
                 "dose": "Periodica",
-                "status": false
-            }
-        ],
-        "FebreAmarela": [
-            {
-                "id": 78,
-                "nome": "Febre amarela",
-                "descricao": "Previne a febre amarela.",
-                "categoria": "Adolescente",
-                "dose": "DoseUnica",
-                "status": false
-            }
-        ],
-        "HPV": [
-            {
-                "id": 86,
-                "nome": "HPV",
-                "descricao": "Previne o papiloma, vírus humano que causa cânceres e verrugas genitais.",
-                "categoria": "Adolescente",
-                "dose": "PrimeiraDose",
-                "status": false
-            },
-            {
-                "id": 87,
-                "nome": "HPV",
-                "descricao": "Previne o papiloma, vírus humano que causa cânceres e verrugas genitais.",
-                "categoria": "Adolescente",
-                "dose": "SegundaDose",
                 "status": false
             }
         ],
         "HepatiteB": [
             {
-                "id": 50,
+                "id": 151,
                 "nome": "Hepatite B",
                 "descricao": "Previne a hepatite B.",
-                "categoria": "Adolescente",
+                "categoria": "Idoso",
                 "dose": "PrimeiraDose",
                 "status": false
             },
             {
-                "id": 51,
+                "id": 152,
                 "nome": "Hepatite B",
                 "descricao": "Previne a hepatite B.",
-                "categoria": "Adolescente",
+                "categoria": "Idoso",
                 "dose": "SegundaDose",
                 "status": false
             },
             {
-                "id": 52,
+                "id": 153,
                 "nome": "Hepatite B",
                 "descricao": "Previne a hepatite B.",
-                "categoria": "Adolescente",
+                "categoria": "Idoso",
                 "dose": "TerceiraDose",
                 "status": false
             }
         ],
-        "MeningococicaC": [
+        "HPV": [
             {
-                "id": 76,
-                "nome": "Meningocócica C conjugada",
-                "descricao": "Previne a doença meningocócica C.",
-                "categoria": "Adolescente",
+                "id": 185,
+                "nome": "HPV",
+                "descricao": "Previne o papiloma, vírus humano que causa cânceres e verrugas genitais.",
+                "categoria": "Idoso",
+                "dose": "PrimeiraDose",
+                "status": false
+            },
+            {
+                "id": 186,
+                "nome": "HPV",
+                "descricao": "Previne o papiloma, vírus humano que causa cânceres e verrugas genitais.",
+                "categoria": "Idoso",
+                "dose": "SegundaDose",
+                "status": false
+            }
+        ],
+        "FebreAmarela": [
+            {
+                "id": 175,
+                "nome": "Febre amarela",
+                "descricao": "Previne a febre amarela.",
+                "categoria": "Idoso",
+                "dose": "DoseUnica",
+                "status": false
+            }
+        ]
+    },
+    "Adulto": {
+        "DuplaAdulto": [
+            {
+                "id": 188,
+                "nome": "Dupla Adulto (dT)",
+                "descricao": "Previne difteria e tétano.",
+                "categoria": "Adulto",
+                "dose": "Periodica",
+                "status": false
+            }
+        ],
+        "HepatiteB": [
+            {
+                "id": 148,
+                "nome": "Hepatite B",
+                "descricao": "Previne a hepatite B.",
+                "categoria": "Adulto",
+                "dose": "PrimeiraDose",
+                "status": false
+            },
+            {
+                "id": 149,
+                "nome": "Hepatite B",
+                "descricao": "Previne a hepatite B.",
+                "categoria": "Adulto",
+                "dose": "SegundaDose",
+                "status": false
+            },
+            {
+                "id": 150,
+                "nome": "Hepatite B",
+                "descricao": "Previne a hepatite B.",
+                "categoria": "Adulto",
+                "dose": "TerceiraDose",
+                "status": false
+            }
+        ],
+        "HPV": [
+            {
+                "id": 183,
+                "nome": "HPV",
+                "descricao": "Previne o papiloma, vírus humano que causa cânceres e verrugas genitais.",
+                "categoria": "Adulto",
+                "dose": "PrimeiraDose",
+                "status": false
+            },
+            {
+                "id": 184,
+                "nome": "HPV",
+                "descricao": "Previne o papiloma, vírus humano que causa cânceres e verrugas genitais.",
+                "categoria": "Adulto",
+                "dose": "SegundaDose",
+                "status": false
+            }
+        ],
+        "TetraViral": [
+            {
+                "id": 179,
+                "nome": "Tetra viral ou tríplice viral + varicela",
+                "descricao": "Previne sarampo, rubéola, caxumba e varicela/catapora.",
+                "categoria": "Adulto",
+                "dose": "DoseUnica",
+                "status": false
+            }
+        ],
+        "FebreAmarela": [
+            {
+                "id": 174,
+                "nome": "Febre amarela",
+                "descricao": "Previne a febre amarela.",
+                "categoria": "Adulto",
                 "dose": "DoseUnica",
                 "status": false
             }
         ]
     },
     "Criança": {
-        "TripliceViral": [
+        "BCG": [
             {
-                "id": 81,
-                "nome": "Tríplice viral (sarampo, caxumba e rubéola)",
-                "descricao": "Previne sarampo, caxumba e rubéola.",
+                "id": 143,
+                "nome": "BCG (Bacilo Calmette-Guerin)",
+                "descricao": "Previne as formas graves de tuberculose, principalmente miliar e meníngea.",
+                "categoria": "Criança",
+                "dose": "DoseUnica",
+                "status": true
+            }
+        ],
+        "MeningococicaC": [
+            {
+                "id": 169,
+                "nome": "Meningocócica C conjugada",
+                "descricao": "Previne a doença meningocócica C.",
+                "categoria": "Criança",
+                "dose": "PrimeiraDose",
+                "status": true
+            },
+            {
+                "id": 170,
+                "nome": "Meningocócica C conjugada",
+                "descricao": "Previne a doença meningocócica C.",
+                "categoria": "Criança",
+                "dose": "SegundaDose",
+                "status": true
+            }
+        ],
+        "Rotavirus": [
+            {
+                "id": 167,
+                "nome": "Vacina rotavírus humano G1P1",
+                "descricao": "Previne diarreia por rotavírus.",
+                "categoria": "Criança",
+                "dose": "PrimeiraDose",
+                "status": false
+            },
+            {
+                "id": 168,
+                "nome": "Vacina rotavírus humano G1P1",
+                "descricao": "Previne diarreia por rotavírus.",
+                "categoria": "Criança",
+                "dose": "SegundaDose",
+                "status": false
+            }
+        ],
+        "HepatiteA": [
+            {
+                "id": 180,
+                "nome": "Hepatite A",
+                "descricao": "Previne a hepatite A.",
+                "categoria": "Criança",
+                "dose": "DoseUnica",
+                "status": true
+            }
+        ],
+        "HepatiteB": [
+            {
+                "id": 144,
+                "nome": "Hepatite B",
+                "descricao": "Previne a hepatite B.",
                 "categoria": "Criança",
                 "dose": "PrimeiraDose",
                 "status": false
@@ -212,41 +316,119 @@ Explicação - Ao fazer a requisição, caso as informações estejam corretas s
         ],
         "Poliomielite": [
             {
-                "id": 64,
+                "id": 159,
                 "nome": "Poliomielite",
                 "descricao": "Previne poliomielite ou paralisia infantil.",
+                "categoria": "Criança",
+                "dose": "PrimeiraDose",
+                "status": true
+            },
+            {
+                "id": 160,
+                "nome": "Poliomielite",
+                "descricao": "Previne poliomielite ou paralisia infantil.",
+                "categoria": "Criança",
+                "dose": "SegundaDose",
+                "status": true
+            },
+            {
+                "id": 161,
+                "nome": "Poliomielite",
+                "descricao": "Previne poliomielite ou paralisia infantil.",
+                "categoria": "Criança",
+                "dose": "TerceiraDose",
+                "status": true
+            },
+            {
+                "id": 162,
+                "nome": "Poliomielite",
+                "descricao": "Previne poliomielite ou paralisia infantil.",
+                "categoria": "Criança",
+                "dose": "PrimeiroReforco",
+                "status": true
+            },
+            {
+                "id": 163,
+                "nome": "Poliomielite",
+                "descricao": "Previne poliomielite ou paralisia infantil.",
+                "categoria": "Criança",
+                "dose": "SegundoReforco",
+                "status": true
+            }
+        ],
+        "TripliceViral": [
+            {
+                "id": 176,
+                "nome": "Tríplice viral (sarampo, caxumba e rubéola)",
+                "descricao": "Previne sarampo, caxumba e rubéola.",
+                "categoria": "Criança",
+                "dose": "PrimeiraDose",
+                "status": true
+            }
+        ],
+        "Pneumococica10V": [
+            {
+                "id": 164,
+                "nome": "Pneumocócica 10V",
+                "descricao": "Previne pneumonia, otite, meningite e outras doenças causadas pelo Pneumococo.",
                 "categoria": "Criança",
                 "dose": "PrimeiraDose",
                 "status": false
             },
             {
-                "id": 65,
-                "nome": "Poliomielite",
-                "descricao": "Previne poliomielite ou paralisia infantil.",
+                "id": 165,
+                "nome": "Pneumocócica 10V",
+                "descricao": "Previne pneumonia, otite, meningite e outras doenças causadas pelo Pneumococo.",
                 "categoria": "Criança",
                 "dose": "SegundaDose",
                 "status": false
             },
             {
-                "id": 66,
-                "nome": "Poliomielite",
-                "descricao": "Previne poliomielite ou paralisia infantil.",
+                "id": 166,
+                "nome": "Pneumocócica 10V",
+                "descricao": "Previne pneumonia, otite, meningite e outras doenças causadas pelo Pneumococo.",
+                "categoria": "Criança",
+                "dose": "PrimeiroReforco",
+                "status": false
+            }
+        ],
+        "Pentavalente": [
+            {
+                "id": 154,
+                "nome": "Pentavalente (DTP/HB/Hib)",
+                "descricao": "Previne difteria, tétano, coqueluche, hepatite B e meningite e infecções por HiB.",
+                "categoria": "Criança",
+                "dose": "PrimeiraDose",
+                "status": false
+            },
+            {
+                "id": 155,
+                "nome": "Pentavalente (DTP/HB/Hib)",
+                "descricao": "Previne difteria, tétano, coqueluche, hepatite B e meningite e infecções por HiB.",
+                "categoria": "Criança",
+                "dose": "SegundaDose",
+                "status": false
+            },
+            {
+                "id": 156,
+                "nome": "Pentavalente (DTP/HB/Hib)",
+                "descricao": "Previne difteria, tétano, coqueluche, hepatite B e meningite e infecções por HiB.",
                 "categoria": "Criança",
                 "dose": "TerceiraDose",
                 "status": false
             },
             {
-                "id": 67,
-                "nome": "Poliomielite",
-                "descricao": "Previne poliomielite ou paralisia infantil.",
+                "id": 157,
+                "nome": "Pentavalente (DTP/HB/Hib)",
+                "descricao": "Previne difteria, tétano, coqueluche, hepatite B e meningite e infecções por HiB.",
                 "categoria": "Criança",
                 "dose": "PrimeiroReforco",
                 "status": false
             },
             {
-                "id": 68,
-                "nome": "Poliomielite",
-                "descricao": "Previne poliomielite ou paralisia infantil.",
+                "id": 158,
+                "nome": "Pentavalente (DTP/HB/Hib)",
+                "descricao": "Previne difteria, tétano, coqueluche, hepatite B e meningite e infecções por HiB.",
                 "categoria": "Criança",
                 "dose": "SegundoReforco",
                 "status": false
@@ -254,145 +436,105 @@ Explicação - Ao fazer a requisição, caso as informações estejam corretas s
         ],
         "FebreAmarela": [
             {
-                "id": 77,
+                "id": 172,
                 "nome": "Febre amarela",
                 "descricao": "Previne a febre amarela.",
                 "categoria": "Criança",
                 "dose": "DoseUnica",
                 "status": false
             }
-        ],
-        "HepatiteA": [
+        ]
+    },
+    "Adolescente": {
+        "MeningococicaC": [
             {
-                "id": 85,
-                "nome": "Hepatite A",
-                "descricao": "Previne a hepatite A.",
-                "categoria": "Criança",
+                "id": 171,
+                "nome": "Meningocócica C conjugada",
+                "descricao": "Previne a doença meningocócica C.",
+                "categoria": "Adolescente",
                 "dose": "DoseUnica",
-                "status": false
+                "status": true
             }
         ],
-        "Rotavirus": [
+        "DuplaAdulto": [
             {
-                "id": 72,
-                "nome": "Vacina rotavírus humano G1P1",
-                "descricao": "Previne diarreia por rotavírus.",
-                "categoria": "Criança",
-                "dose": "PrimeiraDose",
-                "status": false
-            },
-            {
-                "id": 73,
-                "nome": "Vacina rotavírus humano G1P1",
-                "descricao": "Previne diarreia por rotavírus.",
-                "categoria": "Criança",
-                "dose": "SegundaDose",
-                "status": false
-            }
-        ],
-        "Pentavalente": [
-            {
-                "id": 59,
-                "nome": "Pentavalente (DTP/HB/Hib)",
-                "descricao": "Previne difteria, tétano, coqueluche, hepatite B e meningite e infecções por HiB.",
-                "categoria": "Criança",
-                "dose": "PrimeiraDose",
-                "status": false
-            },
-            {
-                "id": 60,
-                "nome": "Pentavalente (DTP/HB/Hib)",
-                "descricao": "Previne difteria, tétano, coqueluche, hepatite B e meningite e infecções por HiB.",
-                "categoria": "Criança",
-                "dose": "SegundaDose",
-                "status": false
-            },
-            {
-                "id": 61,
-                "nome": "Pentavalente (DTP/HB/Hib)",
-                "descricao": "Previne difteria, tétano, coqueluche, hepatite B e meningite e infecções por HiB.",
-                "categoria": "Criança",
-                "dose": "TerceiraDose",
-                "status": false
-            },
-            {
-                "id": 62,
-                "nome": "Pentavalente (DTP/HB/Hib)",
-                "descricao": "Previne difteria, tétano, coqueluche, hepatite B e meningite e infecções por HiB.",
-                "categoria": "Criança",
-                "dose": "PrimeiroReforco",
-                "status": false
-            },
-            {
-                "id": 63,
-                "nome": "Pentavalente (DTP/HB/Hib)",
-                "descricao": "Previne difteria, tétano, coqueluche, hepatite B e meningite e infecções por HiB.",
-                "categoria": "Criança",
-                "dose": "SegundoReforco",
-                "status": false
+                "id": 187,
+                "nome": "Dupla Adulto (dT)",
+                "descricao": "Previne difteria e tétano.",
+                "categoria": "Adolescente",
+                "dose": "Periodica",
+                "status": true
             }
         ],
         "HepatiteB": [
             {
-                "id": 49,
+                "id": 145,
                 "nome": "Hepatite B",
                 "descricao": "Previne a hepatite B.",
-                "categoria": "Criança",
+                "categoria": "Adolescente",
                 "dose": "PrimeiraDose",
-                "status": false
-            }
-        ],
-        "MeningococicaC": [
-            {
-                "id": 74,
-                "nome": "Meningocócica C conjugada",
-                "descricao": "Previne a doença meningocócica C.",
-                "categoria": "Criança",
-                "dose": "PrimeiraDose",
-                "status": false
+                "status": true
             },
             {
-                "id": 75,
-                "nome": "Meningocócica C conjugada",
-                "descricao": "Previne a doença meningocócica C.",
-                "categoria": "Criança",
+                "id": 146,
+                "nome": "Hepatite B",
+                "descricao": "Previne a hepatite B.",
+                "categoria": "Adolescente",
                 "dose": "SegundaDose",
-                "status": false
+                "status": true
+            },
+            {
+                "id": 147,
+                "nome": "Hepatite B",
+                "descricao": "Previne a hepatite B.",
+                "categoria": "Adolescente",
+                "dose": "TerceiraDose",
+                "status": true
             }
         ],
-        "BCG": [
+        "HPV": [
             {
-                "id": 48,
-                "nome": "BCG (Bacilo Calmette-Guerin)",
-                "descricao": "Previne as formas graves de tuberculose, principalmente miliar e meníngea.",
-                "categoria": "Criança",
+                "id": 181,
+                "nome": "HPV",
+                "descricao": "Previne o papiloma, vírus humano que causa cânceres e verrugas genitais.",
+                "categoria": "Adolescente",
+                "dose": "PrimeiraDose",
+                "status": true
+            },
+            {
+                "id": 182,
+                "nome": "HPV",
+                "descricao": "Previne o papiloma, vírus humano que causa cânceres e verrugas genitais.",
+                "categoria": "Adolescente",
+                "dose": "SegundaDose",
+                "status": true
+            }
+        ],
+        "TripliceViral": [
+            {
+                "id": 177,
+                "nome": "Tríplice viral (sarampo, caxumba e rubéola)",
+                "descricao": "Previne sarampo, caxumba e rubéola.",
+                "categoria": "Adolescente",
+                "dose": "PrimeiraDose",
+                "status": true
+            },
+            {
+                "id": 178,
+                "nome": "Tríplice viral (sarampo, caxumba e rubéola)",
+                "descricao": "Previne sarampo, caxumba e rubéola.",
+                "categoria": "Adolescente",
+                "dose": "SegundaDose",
+                "status": true
+            }
+        ],
+        "FebreAmarela": [
+            {
+                "id": 173,
+                "nome": "Febre amarela",
+                "descricao": "Previne a febre amarela.",
+                "categoria": "Adolescente",
                 "dose": "DoseUnica",
-                "status": false
-            }
-        ],
-        "Pneumococica10V": [
-            {
-                "id": 69,
-                "nome": "Pneumocócica 10V",
-                "descricao": "Previne pneumonia, otite, meningite e outras doenças causadas pelo Pneumococo.",
-                "categoria": "Criança",
-                "dose": "PrimeiraDose",
-                "status": false
-            },
-            {
-                "id": 70,
-                "nome": "Pneumocócica 10V",
-                "descricao": "Previne pneumonia, otite, meningite e outras doenças causadas pelo Pneumococo.",
-                "categoria": "Criança",
-                "dose": "SegundaDose",
-                "status": false
-            },
-            {
-                "id": 71,
-                "nome": "Pneumocócica 10V",
-                "descricao": "Previne pneumonia, otite, meningite e outras doenças causadas pelo Pneumococo.",
-                "categoria": "Criança",
-                "dose": "PrimeiroReforco",
                 "status": false
             }
         ]
