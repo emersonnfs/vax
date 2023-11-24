@@ -4,6 +4,20 @@
   - [Exemplos Api](#exemplos-da-api)
   - [How to do Cloud](#how-to-do-cloud) 
 
+## Integrantes
+  *TURMA 2-TDSR*
+  
+  *Abner Rodrigues Ferreira - RM: 93576*
+  
+  *Davi Oliveira Da Silva - RM: 95535*
+  
+  *Emerson Nascimento Figueredo Silva - RM:95199*
+  
+  *Guilherme De Jesus Ferreira - RM: 95542*
+  
+  *João Victor Oliveira Da Silva - RM: 94231*
+
+---
 ## Descrição
 Atualmente, é evidente que nem todas as pessoas têm acesso à imunização adequada. No Brasil, mais de 69 milhões de cidadãos ainda não receberam a primeira dose da vacina contra a COVID-19, conforme divulgado pelo governo brasileiro. 
 A pergunta que surge é: por que essa lacuna existe? A resposta remonta à persistente desigualdade que permeia o país desde o seu surgimento, sendo um dos principais obstáculos para a plena vacinação.
