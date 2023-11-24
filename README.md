@@ -64,7 +64,7 @@ Explicação - Ao fazer o cadastro é gerado automaticamente um formulário com 
 **Request**
 ```js
 {
-  "email": "emerson@email.com",
+  "email": "ana@email.com",
   "senha": "senha123"
 }
 ```
@@ -74,10 +74,18 @@ Explicação - Ao fazer o login vai ser verificado se está todas informações 
 **Response**
 ```js
 {
-  "nome": "Emerson Silva",
-  "email": "emerson@email.com",
-  "dataNascimento": "1996-11-08",
-  "cep": "06420430"
+    "token": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbmFAZW1haWwuY29tIiwiZXhwIjoxNzAwODcxMjkzLCJpc3MiOiJWQVgifQ.UTv27otER2EnbKKJ688XYYbUN8wkYSFpC1LsPE3GmSA",
+        "type": "JWT",
+        "prefix": "Bearer"
+    },
+    "usuario": {
+        "id": 4,
+        "nome": "Ana",
+        "email": "ana@email.com",
+        "dataNascimento": "1960-01-01",
+        "cep": "01789258"
+    }
 }
 ```
 ---
