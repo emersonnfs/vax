@@ -2,7 +2,9 @@ package br.com.vax.controllers;
 
 import br.com.vax.entities.Credencial;
 import br.com.vax.entities.GeneroEnum;
+import br.com.vax.entities.Token;
 import br.com.vax.entities.Usuario;
+import br.com.vax.models.LoginResponse;
 import br.com.vax.models.UpdateDadosUsuario;
 import br.com.vax.models.UpdateSenhaUsuario;
 import br.com.vax.models.UsuarioLoginResponse;
@@ -68,7 +70,7 @@ public class UsuarioController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<UsuarioLoginResponse> login(@RequestBody @Valid Credencial credencial) {
+    public ResponseEntity<?> login(@RequestBody @Valid Credencial credencial) {
         manager.authenticate(credencial.toAuthentication());
         var token = tokenService.generateToken(credencial);
         Optional<Usuario> usuarioOptional = repository.findByEmail(credencial.email());
@@ -78,10 +80,8 @@ public class UsuarioController {
             this.modelMapper = new ModelMapper();
 
             UsuarioLoginResponse usuarioLoginResponse = modelMapper.map(usuario, UsuarioLoginResponse.class);
-
-            return ResponseEntity.ok()
-                    .header("Authorization", token.toString())
-                    .body(usuarioLoginResponse);
+            LoginResponse response = new LoginResponse(token, usuarioLoginResponse);
+            return ResponseEntity.ok(response);
         }
 
         return ResponseEntity.badRequest().build();
