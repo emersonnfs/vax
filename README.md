@@ -5,7 +5,17 @@
   - [How to do Cloud](#how-to-do-cloud) 
 
 ## Descrição
+Atualmente, é evidente que nem todas as pessoas têm acesso à imunização adequada. No Brasil, mais de 69 milhões de cidadãos ainda não receberam a primeira dose da vacina contra a COVID-19, conforme divulgado pelo governo brasileiro. 
+A pergunta que surge é: por que essa lacuna existe? A resposta remonta à persistente desigualdade que permeia o país desde o seu surgimento, sendo um dos principais obstáculos para a plena vacinação.
 
+Nos dá VAX temos uma resposta direta a essa desigualdade. Trata-se de um aplicativo gratuito destinado a possibilitar que pessoas em todo o território nacional identifiquem quais vacinas são recomendadas para elas e onde podem recebê-las com facilidade. O aplicativo desempenhará um papel crucial ao ajudar os indivíduos a se organizar, fornecendo um calendário de vacinação e permitindo que se preparem de maneira adequada para receber as doses necessárias. 
+Além disso, oferecerá informações sobre quais vacinas ainda estão pendentes, permitindo que as pessoas se programem de forma eficaz e, assim, melhorem sua qualidade de vida.
+
+Acreditamos que a cultura DevOps pode simplificar consideravelmente a experiência do usuário final. Propomos a implementação de um banco de dados na nuvem, o que proporcionará maior segurança para informações sensíveis. Ao migrar para a nuvem, eliminaremos as preocupações relacionadas ao hardware.
+
+Ao optar por uma aplicação em ambiente de nuvem, garantiremos um armazenamento de informações mais ágil e, acima de tudo, manteremos a integridade dos dados. Essa abordagem não apenas otimiza o desempenho, mas também reforça a segurança, oferecendo uma solução eficiente e confiável para atender às necessidades dos usuários.
+
+---
 ### Url da Api
 URL: https://app-vax.azurewebsites.net
 ---
